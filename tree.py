@@ -68,7 +68,7 @@ class ChristmasTree:
         line = self._add_outline(middle)
         self.tree.append(line)
 
-    def get_light_color(self):
+    def _get_light_color(self):
         """Picks a light color, based on user's light type.
 
         Returns:
@@ -104,7 +104,7 @@ class ChristmasTree:
             elif ele == "_" and base:
                 line[idx] = f"{Fore.CYAN}{ele}{Fore.RESET}"
             elif ele == "●":
-                color = self.get_light_color()
+                color = self._get_light_color()
                 line[idx] = f"{Style.BRIGHT}{color}{ele}{Fore.RESET}{Style.NORMAL}"
                 light_flag = True
             else:
