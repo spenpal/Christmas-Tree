@@ -8,3 +8,7 @@ If you have python 3.6+ as your default interpreter, try the following based on 
 If not (but you have it installed), try the following:
 
     python3.x tree.py
+
+NOTE: If by the off-chance Python 3.6+ doesn't work, try Python3.8+.
+
+To exit the program, press Ctrl + C.
