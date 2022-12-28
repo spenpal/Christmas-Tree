@@ -165,7 +165,7 @@ class ChristmasTree:
         self.tree.append(trunk)
         self.tree.append(base)
 
-    def message(self):
+    def _message(self):
         """Displays a sliding window of a chosen message: "MERRY CHRISTMAS AND HAPPY NEW YEAR!"
 
         Yields:
@@ -210,7 +210,7 @@ class ChristmasTree:
         """
         self.tree = self._add_padding(self.tree)
         self.light_tree = self.tree.copy()
-        window_msg = self.message()
+        window_msg = self._message()
 
         while True:
             for idx, line in enumerate(self.tree):
