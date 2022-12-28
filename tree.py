@@ -8,7 +8,6 @@ from math import ceil
 
 import colorama
 from colorama import Back, Fore, Style
-from playsound import playsound
 
 colorama.init(autoreset=True)
 
@@ -134,8 +133,6 @@ class ChristmasTree:
         self.tree = self._add_padding(self.tree)
         self.light_tree = self.tree.copy()
         window_msg = self.message()
-
-        playsound("https://voca.ro/19jbB3v2GNKi")
 
         while True:
             for idx, line in enumerate(self.tree):
