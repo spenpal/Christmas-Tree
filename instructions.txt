@@ -1,0 +1,10 @@
+To run tree.py, please use Python 3.6+.
+
+If you have python 3.6+ as your default interpreter, try the following based on your OS:
+
+    python tree.py
+    python3 tree.py
+
+If not (but you have it installed), try the following:
+
+    python3.x tree.py
